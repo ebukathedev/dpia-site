@@ -31,7 +31,7 @@
 			<div
 				class="md:flex md:items-center md:c-container md:space-x-6 min-[1000px]:space-x-10"
 			>
-				<!-- Logo and Menu -->
+				<!-- Logo and Menu Button-->
 				<div
 					class="flex items-center justify-between max-md:c-container"
 				>
@@ -48,15 +48,18 @@
 						<span></span>
 					</button>
 				</div>
-				<!-- Mobile Nav -->
+				<!-- Links-->
 				<ul
-					class="text-sm mt-5 py-1 mobile-nav-links md:desktop-nav-links min-[1000px]:text-base md:mt-0 md:p-0"
+					class="text-sm mt-5 py-1 links mobile-nav-links md:desktop-nav-links min-[1000px]:text-base md:mt-0 md:p-0"
 				>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Who we are</a></li>
 					<li>
 						<a href="#">
-							<div class="flex items-center space-x-2">
+							<div
+								class="flex items-center space-x-2"
+								id="dropdown-toggle"
+							>
 								<span>What we do</span>
 								<div>
 									<img
@@ -68,7 +71,7 @@
 						</a>
 					</li>
 					<!-- Mobile Dropdown -->
-					<li class="md:hidden">
+					<li class="dropdown-links md:hidden">
 						<ul class="py-1 mobile-dropdown">
 							<li>
 								<a href="#">
@@ -164,6 +167,8 @@
 		</nav>
 
 		<!-- Hero -->
-		<section class="min-h-screen bg-violet-600"> </section>
+		<section class="min-h-screen bg-gray-gradient-100"> </section>
+		<!-- Javascript -->
+		<script src="js/main.js"></script>
 	</body>
 </html>

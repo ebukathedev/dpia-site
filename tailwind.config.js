@@ -11,6 +11,8 @@ module.exports = {
 		extend: {
 			colors: {
 				"blue-light-50": "#F0F9FF",
+				"blue-light-100": "#E0F2FE",
+				"blue-light-500": "#0BA5EC",
 				"blue-light-700": "#026AA2",
 				"gray-25": "#FCFCFD",
 				"gray-100": "#F2F4F7",
@@ -22,7 +24,7 @@ module.exports = {
 			backgroundImage: {
 				"gray-gradient-100":
 					"linear-gradient(45deg, #1D2939 0%, #475467 100%)",
-				"gray-gradient":
+				"gray-gradient-200":
 					"linear-gradient(90deg, #475467 0%, #667085 100%)",
 			},
 			fontFamily: {

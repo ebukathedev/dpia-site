@@ -607,8 +607,25 @@ body{
   background-color: rgb(52 64 84 / var(--tw-bg-opacity));
 }
 
-.mobile-nav-links{
-  border-top-width: 1px;
+@media not all and (min-width: 768px){
+  .links{
+    height: 0px;
+    overflow: hidden;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  .show-links{
+    height: 309px;
+    border-top-width: 1px;
+  }
+
+  .show-all-links{
+    height: 534.11px;
+    border-top-width: 1px;
+  }
 }
 
 @media (min-width: 768px){
@@ -688,12 +705,37 @@ body{
   .mobile-nav-links > li > a{
     padding: 0px;
   }
+
+  .mobile-nav-links > li > a:hover{
+    background-color: transparent;
+    --tw-text-opacity: 1;
+    color: rgb(11 165 236 / var(--tw-text-opacity));
+  }
+
+  .mobile-nav-links > li > a:active{
+    background-color: transparent;
+    --tw-text-opacity: 1;
+    color: rgb(11 165 236 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 1000px){
   .mobile-nav-links > li > a{
     padding: 0.5rem;
   }
+}
+
+.dropdown-links{
+  height: 0px;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.show-dropdown-links{
+  height: 225.11px;
 }
 
 .mobile-dropdown > li > a{
@@ -755,6 +797,19 @@ body{
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(2 106 162 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-cta:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
+}
+
+.nav-cta:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
 }
 
 .sr-only{
@@ -1995,14 +2050,13 @@ body{
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-violet-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(124 58 237 / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-gradient-100{
+  background-image: linear-gradient(45deg, #1D2939 0%, #475467 100%);
 }
 
 .decoration-slice{
