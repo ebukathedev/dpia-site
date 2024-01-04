@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply min-h-screen font-inter;
+	}
+}
+
+@layer components {
+	.c-container {
+		@apply max-[479px]:px-5 max-[1019px]:px-12 w-full;
+	}
+	.hamburger-menu {
+		@apply flex flex-col p-2 space-y-1 md:hidden;
+	}
+	.hamburger-menu > span {
+		@apply h-[2px] w-[22px] bg-gray-700;
+	}
+
+	.desktop-nav-links {
+		@apply flex items-center flex-1 gap-4;
+	}
+
+	.mobile-nav-links {
+		@apply border-t md:border-none;
+	}
+
+	.mobile-nav-links > li > a {
+		@apply block py-[10px] text-blue-light-700 font-semibold max-md:c-container transition-all ease-in-out hover:bg-blue-light-50 active:bg-blue-light-50 md:p-0 min-[1000px]:p-2;
+	}
+
+	.mobile-dropdown > li > a {
+		@apply block py-2 font-semibold transition-all ease-in-out text-gray-950 c-container hover:bg-blue-light-50 active:bg-blue-light-50;
+	}
+
+	.nav-cta {
+		@apply font-semibold text-blue-light-700 bg-blue-light-50 rounded-lg inline-block py-[10px] px-[18px];
+	}
+
+	@media screen and (min-width: 1020px) {
+		.c-container {
+			max-width: calc(83.3 * 1vw);
+			margin: auto;
+		}
+	}
+}
