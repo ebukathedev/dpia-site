@@ -2806,13 +2806,6 @@ body{
   }
 }
 
-@media (min-width: 1020px){
-  .min-\[1020px\]\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
 @media (prefers-color-scheme: dark){
   @media (min-width: 1080px){
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
