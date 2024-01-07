@@ -8,6 +8,7 @@ const dropdownToggleArrow = document.querySelector("#dropdown-toggle-arrow");
 const navLink = document.querySelectorAll(".nav-link");
 const dropdownLink = document.querySelectorAll(".dropdown-link");
 
+const desktopDropdown = document.querySelector(".desktop-dropdown");
 navToggle.addEventListener("click", () => {
 	if (links.classList.contains("show-all-links")) {
 		links.classList.remove("show-all-links");
@@ -49,6 +50,13 @@ dropdownToggle.addEventListener("click", () => {
 		// This extends the height of the menu to accommodate the dropdown.
 		links.classList.remove("show-links");
 		links.classList.add("show-all-links");
+	}
+
+	// Desktop dropdown
+	if (desktopDropdown.classList.contains("show-desktop-dropdown")) {
+		desktopDropdown.classList.remove("show-desktop-dropdown");
+	} else {
+		desktopDropdown.classList.add("show-desktop-dropdown");
 	}
 });
 

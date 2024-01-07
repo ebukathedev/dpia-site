@@ -35,10 +35,7 @@
 				<div
 					class="flex items-center justify-between max-md:c-container"
 				>
-					<a
-						class="block ml-2 w-14 md:ml-0 md:w-12"
-						href="index.html"
-					>
+					<a class="block ml-2 w-14 md:ml-0 md:w-12" href="/">
 						<img
 							src="images/svgs/logo.svg"
 							alt="logo"
@@ -55,14 +52,14 @@
 				<ul
 					class="text-sm mt-5 py-1 links mobile-nav-links md:desktop-nav-links min-[1000px]:text-base md:mt-0 md:p-0"
 				>
-					<li><a href="index.html" class="nav-link">Home</a></li>
+					<li><a href="/" class="nav-link">Home</a></li>
 					<li>
-						<a href="who_we_are.html" class="nav-link">
+						<a href="/who_we_are.html" class="nav-link">
 							Who we are
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="#" class="relative">
 							<div
 								class="flex items-center space-x-2"
 								id="dropdown-toggle"
@@ -77,14 +74,139 @@
 									/>
 								</div>
 							</div>
+							<!-- Desktop Dropdown -->
+							<div class="desktop-dropdown hidden md:block">
+								<ul class="grid grid-cols-2 grid-rows-3 gap-4">
+									<li class="">
+										<a href="technology_solutions.html">
+											<div class="flex gap-2 text-xs">
+												<div class="w-8">
+													<img
+														src="images/svgs/trending-up.svg"
+														alt="trending up arrow"
+														class=""
+													/>
+												</div>
+												<div class="">
+													<span class="font-semibold"
+														>Technology
+														Solution</span
+													>
+													<p>
+														Empowering digital
+														evolution with
+														cutting-edge tech
+														solutions for innovation
+														and efficiency
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="coding_academy.html">
+											<div class="flex gap-2 text-xs">
+												<div class="w-8">
+													<img
+														src="images/svgs/bar-chart.svg"
+														alt="trending up arrow"
+														class=""
+													/>
+												</div>
+												<div class="">
+													<span class="font-semibold"
+														>Coding Academy</span
+													>
+													<p
+														>Closing tech skill gaps
+														through ICT training for
+														all ages</p
+													>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="infrastructure_service.html">
+											<div class="flex gap-2 text-xs">
+												<div class="w-8">
+													<img
+														src="images/svgs/check-circle.svg"
+														alt="trending up arrow"
+														class="block w-full"
+													/>
+												</div>
+												<div class="">
+													<span class="font-semibold">
+														Infrastructure Service
+													</span>
+													<p
+														>Analyze conversion
+														rates.</p
+													>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="management_consulting.html">
+											<div class="flex gap-2 text-xs">
+												<div class="w-8">
+													<img
+														src="images/svgs/pie-chart.svg"
+														alt="trending up arrow"
+														class="block w-full"
+													/>
+												</div>
+												<div class="">
+													<span class="font-semibold">
+														Management Consulting
+													</span>
+													<p
+														>Essential services
+														tailored to elevate your
+														organizational
+														efficiency and
+														performance.</p
+													>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="innovation_hub.html">
+											<div class="flex gap-2 text-xs">
+												<div class="w-8">
+													<img
+														src="images/svgs/monitor.svg"
+														alt="trending up arrow"
+														class="block w-full"
+													/>
+												</div>
+												<div class="">
+													<span class="font-semibold"
+														>Innovation Hub</span
+													>
+													<p>
+														Where startups thrive
+														with diverse workspace
+														options and innovation
+														support
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</a>
 					</li>
 					<!-- Mobile Dropdown -->
-					<li class="dropdown-links">
+					<li class="dropdown-links md:hidden">
 						<ul class="py-1 mobile-dropdown">
 							<li>
 								<a
-									href="technology_solutions.html"
+									href="/technology_solutions.html"
 									class="dropdown-link"
 								>
 									<div
@@ -103,7 +225,7 @@
 							</li>
 							<li>
 								<a
-									href="coding_academy.html"
+									href="/coding_academy.html"
 									class="dropdown-link"
 								>
 									<div
@@ -141,7 +263,7 @@
 							</li>
 							<li>
 								<a
-									href="management_consulting.html"
+									href="/management_consulting.html"
 									class="dropdown-link"
 								>
 									<div
@@ -160,7 +282,7 @@
 							</li>
 							<li>
 								<a
-									href="innovation_hub.html"
+									href="/innovation_hub.html"
 									class="dropdown-link"
 								>
 									<div
