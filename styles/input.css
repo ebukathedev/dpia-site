@@ -87,7 +87,7 @@
 	}
 
 	.big-heading {
-		@apply text-[2rem] sm:text-4xl;
+		@apply text-[28px] sm:text-4xl;
 		/* font-size: clamp(32px, 6vw, 64px); */
 	}
 

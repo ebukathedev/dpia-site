@@ -881,7 +881,7 @@ h2,
 }
 
 .big-heading{
-  font-size: 2rem;
+  font-size: 28px;
 }
 
 @media (min-width: 480px){
@@ -1029,6 +1029,10 @@ h2,
   clear: none;
 }
 
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -1039,14 +1043,6 @@ h2,
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
-}
-
-.mb-7{
-  margin-bottom: 1.75rem;
 }
 
 .box-border{
@@ -1183,14 +1179,6 @@ h2,
 
 .w-full{
   width: 100%;
-}
-
-.max-w-lg{
-  max-width: 32rem;
-}
-
-.max-w-md{
-  max-width: 28rem;
 }
 
 .max-w-sm{
@@ -1734,10 +1722,6 @@ h2,
 
 .gap-4{
   gap: 1rem;
-}
-
-.gap-5{
-  gap: 1.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -2318,9 +2302,9 @@ h2,
      object-fit: scale-down;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-\[18px\]{
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .py-1{
@@ -2328,34 +2312,9 @@ h2,
   padding-bottom: 0.25rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-\[10px\]{
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.py-\[\]{
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.px-\[\]{
-  padding-left: ;
-  padding-right: ;
-}
-
-.px-\[18\]{
-  padding-left: 18;
-  padding-right: 18;
-}
-
-.px-\[18px\]{
-  padding-left: 18px;
-  padding-right: 18px;
 }
 
 .pt-5{
