@@ -8,6 +8,14 @@
 	body {
 		@apply min-h-screen font-inter;
 	}
+	h1 {
+		@apply font-semibold;
+	}
+
+	h2,
+	h3 {
+		@apply font-medium;
+	}
 }
 
 @layer components {
@@ -72,6 +80,15 @@
 
 	.nav-cta {
 		@apply font-semibold text-blue-light-700 bg-blue-light-50 rounded-lg inline-block py-[10px] px-[18px] transition-all ease-in-out hover:bg-blue-light-100 active:bg-blue-light-100;
+	}
+
+	.btn {
+		@apply rounded-lg inline-block font-semibold transition-all ease-in-out;
+	}
+
+	.big-heading {
+		@apply text-[2rem] sm:text-4xl;
+		/* font-size: clamp(32px, 6vw, 64px); */
 	}
 
 	@media screen and (min-width: 1020px) {
